@@ -1,0 +1,14 @@
+build*/
+cmake-build*/
+
+.idea/
+.vs/
+.vscode/
+
+.cache/
+
+*.dSYM
+*.o
+.DS_Store
+
+input/

@@ -1,0 +1,8 @@
+BasedOnStyle: Microsoft
+DerivePointerAlignment: false
+PointerAlignment: Left
+AccessModifierOffset: -4
+IndentAccessModifiers: false
+ColumnLimit: 100
+BreakBeforeBraces: Stroustrup
+BreakTemplateDeclarations: Yes
