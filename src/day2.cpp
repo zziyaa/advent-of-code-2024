@@ -1,5 +1,7 @@
 #include "utility.hpp"
 
+#include <iostream>
+
 bool isRecordSafe(const std::vector<int>& record)
 {
     auto inc = false;
