@@ -2,6 +2,7 @@
 
 #include <fstream>
 #include <iostream>
+#include <sstream>
 #include <string>
 
 std::vector<std::string> getInputLines(std::string_view filePath)
@@ -22,4 +23,24 @@ std::vector<std::string> getInputLines(std::string_view filePath)
     }
 
     return lines;
+}
+
+std::vector<std::vector<int>> parseVectorInt(const std::vector<std::string>& lines, char seperator)
+{
+    using namespace std;
+
+    vector<vector<int>> result(lines.size());
+
+    for (int i = 0; i < lines.size(); ++i) {
+        const auto& line = lines[i];
+        istringstream iss(line);
+        string token;
+        vector<int> nums;
+        while (getline(iss, token, seperator)) {
+            nums.push_back(stoi(token));
+        }
+        result[i] = nums;
+    }
+
+    return result;
 }
