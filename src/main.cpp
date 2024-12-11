@@ -1,6 +1,6 @@
-void solveDay8();
+void solveDay9();
 
 int main()
 {
-    solveDay8();
+    solveDay9();
 }
