@@ -40,6 +40,7 @@ target_sources(${PROJECT_NAME}
   "${SOURCE_DIR}/day9.cpp"
   "${SOURCE_DIR}/day10.cpp"
   "${SOURCE_DIR}/day11.cpp"
+  "${SOURCE_DIR}/day12.cpp"
 )
 
 target_include_directories(${PROJECT_NAME} PRIVATE "${CMAKE_SOURCE_DIR}/src")
